@@ -10,7 +10,11 @@ Les brasseurs, du homebrewer au professionnel artisanal, jonglent aujourd'hui en
 
 **Vision**
 
-BEER/ME remplace l'ensemble de ces outils par une application unique, utilisable en conditions réelles de brassage pour accompagner le brasseur de l'empatage jusqu'à la fin de la fermentation.
+BEER/ME remplace l'ensemble de ces outils par une application unique pour accompagner le brasseur de l'empatage jusqu'à la fin de la fermentation.
+
+**Proposition de valeur unique**
+
+Pour le brasseur artisanal, BEER/ME est la seule app conçue pour le suivi de brassin en conditions réelles, là où Excel demande de la discipline et le papier se perd, BEER/ME capture l'information au bon moment, sans friction.
 
 **Objectif - MVP**
 
@@ -198,3 +202,18 @@ L'app est conçue dans une démarche d'éco-conception : requêtes minimisées, 
 - Un brassin complet peut être conduit sans quitter l'application ni recourir à un outil externe
 - A n'importe quel moment après un brassin un brasseur peut consulter l'historique, identifier les écarts entre la version brassin et la recette de référence et en tirer des décisions d'amélioration
 - Aucune donnée saisie en mode offline n'est perdue lors de la resynchronisation
+
+---
+
+## 8. <u>Hypothèses et risques</u>
+
+**Hypothèses**
+   - Les brasseurs artisanaux ont un smartphone ou une tablette à portée pendant le brassin
+   - Le format BeerXML est suffisamment répandu pour couvrir la majorité des recettes existantes
+   - La friction lié à l'outil actuel est assez forte pour motiver un changement d'habitude
+
+**Risques**
+  - Adoption: changer les habitudes d'un brasseur qui à un système en place et "fait comme ça depuis longtemps" est difficile
+  - Offline: la synchronisation post-déconnexion peut générer des conflits de données
+  - BeerXML: certaines recettes maison ne sont pas renseignées dans un logiciel, l'import est impossible
+  - Contrainte matérielle: une app utilisée en continu pendant 6 à 8h de brassin peut drainer la batterie d'un mobile. L'accès à une prise n'est pas garanti.
