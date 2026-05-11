@@ -147,6 +147,8 @@ BEER/ME remplace l'ensemble de ces outils par une application unique, utilisable
 - La courbe affiche densité et température en fonction du temps
 - Les valeurs cibles de la recette sont affichées en superposition
 
+--- 
+
 ## 5. <u>Exigences non-fonctionnelles</u>
 
 **Disponibilité offline**
@@ -173,6 +175,8 @@ Zones de tap larges (utilisable avec des gants), contrastes élevés, lisibilit�
 
 L'app est conçue dans une démarche d'éco-conception : requêtes minimisées, assets optimisés, pas de données chargées inutilement. Ce point fera l'objet d'une réflexion approfondie en phase de conception technique.
 
+--- 
+
 ## 6. <u>Stack technique</u>
 
 | Couche | Choix | Justification |
@@ -186,6 +190,8 @@ L'app est conçue dans une démarche d'éco-conception : requêtes minimisées, 
 | Dataviz | Recharts | Bibliothèque React native, suffisante pour les courbes de fermentation |
 
 ▎ Un BaaS (ex. Supabase) a été envisagé pour simplifier le backend. Cette option a été écartée dans le cadre du projet d'étude afin de démontrer la maîtrise complète de la stack : modélisation de base de données, API REST, et gestion de l'authentification. 
+
+--- 
 
 ## 7. <u>Métriques de succès</u>
 
