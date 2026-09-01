@@ -50,7 +50,7 @@ Les règles de gestion définissent les contraintes métier qui gouvernent le co
 
 ---
 
-## RG-019 à RG-021 — Passation de session
+## RG-019 à RG-021 — Passation de session (V1)
 
 | ID | Libellé | Source |
 |---|---|---|

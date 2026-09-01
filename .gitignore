@@ -27,6 +27,9 @@ logs/
 # IDE
 .vscode/
 .idea/
+
+# Claude Code — .claude/ kept local, CLAUDE.md is shared project config
+.claude/
 *.suo
 *.ntvs*
 *.njsproj

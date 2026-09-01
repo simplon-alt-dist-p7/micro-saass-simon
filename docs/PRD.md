@@ -65,13 +65,13 @@ Pour le brasseur artisanal, BEER/ME est la seule app conçue pour le suivi de br
   - Suivi des étapes de brassage en temps réel avec gestion du timing
   - Annotation des événements en cours de brassin (prises de densité, incidents, observations)
   - Modification des métriques de la recette pendant le brassin — les modifications créent une version propre au brassin sans altérer la recette de référence
-  - Passation de session entre utilisateurs en cours de brassin (mono-utilisateur à un instant T)
 
 **V1 - Suivi de fermentation**
 
   - Saisie des relevés de fermentation (densité, température)
   - Visualisation de la courbe d'évolution générée automatiquement
   - Comparaison avec les valeurs cibles de la recette
+  - Passation de session entre utilisateurs en cours de brassin (mono-utilisateur à un instant T)
 
 **Hors Scope**
 
@@ -125,6 +125,8 @@ Pour le brasseur artisanal, BEER/ME est la seule app conçue pour le suivi de br
 - La modification est enregistrée dans la version brassin uniquement
 - La recette originale reste inchangée
 
+### V1
+
 **US-006 - Passation de session**
 
 > "En tant que brasseur opérationnel, je veux passer la main à un collègue en cours de brassin afin d'assurer la continuité du suivi sans interruption."
@@ -132,8 +134,6 @@ Pour le brasseur artisanal, BEER/ME est la seule app conçue pour le suivi de br
 **Critères d'acceptance**:
 - Un seul utilisateur est actif sur un brassin à un instant T
 - Le collègue qui prend la main voit l'état courant du brassin sans perte de données
-
-### V1
 
 **US-007 - Saisie d'un relevé de fermentation**
 
