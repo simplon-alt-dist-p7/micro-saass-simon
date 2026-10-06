@@ -40,3 +40,9 @@ logs/
 
 # Coverage
 coverage/
+
+# Documentation de dossier personnelle (non versionnée)
+cda-docs/
+
+# Instructions IA locales (non versionnées)
+CLAUDE.md
