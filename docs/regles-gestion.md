@@ -77,3 +77,12 @@ Les règles de gestion définissent les contraintes métier qui gouvernent le co
 |---|---|---|
 | RG-026 | Toutes les données saisies en mode offline sont stockées localement et synchronisées avec le serveur dès que la connexion est rétablie. | PRD §5 |
 | RG-027 | Aucune donnée saisie en mode offline ne peut être perdue lors de la resynchronisation. | PRD §7 — Métriques de succès |
+
+---
+
+## RG-028 à RG-029 — Cycle de vie du brassin
+
+| ID | Libellé | Source |
+|---|---|---|
+| RG-028 | Un utilisateur ne peut conduire qu'un seul brassin non terminé à la fois. | Décision de cadrage — démarrage de brassin |
+| RG-029 | Un brassin est terminé par une action explicite de l'utilisateur actif. Une fois terminé, il ne peut plus être modifié. | Décision de cadrage — démarrage de brassin |
