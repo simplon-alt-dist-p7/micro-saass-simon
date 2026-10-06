@@ -32,6 +32,13 @@ Les repositories encapsulent toutes les interactions avec la base de données vi
 ### Données - PostgreSQL
 Base de données relationnelle. Les migrations sont gérées par Prisma Migrate depuis le fichier `schema.prisma`, qui fait office de source de vérité pour le schéma.
 
+#### Identifiants des entités
+Chaque entité porte une clé primaire identifiant ses instances. Deux cas :
+- **Identifiant relatif** lorsqu'il est unique dans son parent : `recipeStep` (clé composite `(recipeId, order)`).
+- **Identifiant technique (UUID généré côté client)** lorsqu'aucun identifiant naturel ou relatif n'est stable. C'est le cas de `user` (l'email peut changer, il reste unique via une contrainte `UNIQUE`), `recipe` (le nom est unique par règle métier, mais cette garantie doit être portée par la base via `UNIQUE(name)`), `brewSession` et `annotation` : leur timestamp (`startedAt`, `createdAt`) n'est pas garanti unique, car ces données peuvent être créées hors ligne avec l'horloge de l'appareil (RG-026). `brewStep` garde aussi un id technique, car `annotation` le référence : une clé composite obligerait à dupliquer deux colonnes dans chaque FK. `recipeIngredients` et `brewIngredients` ont un `id` pour la même raison : pas d'identifiant naturel.
+
+Les UUID sont générés côté client pour que les données saisies hors ligne aient déjà leur identifiant au moment de la synchronisation. Une séquence auto-incrémentée serveur ne le permettrait pas.
+
 ---
 
 ## Sécurité
