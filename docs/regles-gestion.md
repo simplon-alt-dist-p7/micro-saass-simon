@@ -12,7 +12,7 @@ Les règles de gestion définissent les contraintes métier qui gouvernent le co
 | RG-002 | Une recette importée est en lecture seule. Elle ne peut pas être modifiée directement dans l'application. | US-001 |
 | RG-003 | Un fichier BeerXML non conforme au format standard est rejeté. Aucune recette n'est créée et un message d'erreur est affiché. | US-001 — Scénario 2 |
 | RG-004 | Une même recette peut servir de base à plusieurs brassins distincts. | PRD §3 |
-| RG-005 | Une recette est identifiée de manière unique dans l'application. | Modélisation |
+| RG-005 | Le nom d'une recette est unique dans l'application : deux recettes ne peuvent pas porter le même nom. Le nom ne peut pas être modifié après import. | Modélisation |
 
 ---
 
