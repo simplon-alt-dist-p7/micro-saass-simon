@@ -86,3 +86,11 @@ Les règles de gestion définissent les contraintes métier qui gouvernent le co
 |---|---|---|
 | RG-028 | Un utilisateur ne peut conduire qu'un seul brassin non terminé à la fois. | Décision de cadrage — démarrage de brassin |
 | RG-029 | Un brassin est terminé par une action explicite de l'utilisateur actif. Une fois terminé, il ne peut plus être modifié. | Décision de cadrage — démarrage de brassin |
+
+---
+
+## RG-030 — Ingrédients
+
+| ID | Libellé | Source |
+|---|---|---|
+| RG-030 | Un ingrédient n'existe que comme ligne propre à une recette (`recipeIngredients`) ou à un brassin (`brewIngredients`). Il n'existe pas de catalogue d'ingrédients partagé entre recettes : deux recettes utilisant le même ingrédient (ex. houblon Cascade) en stockent chacune une copie indépendante. | Décision de cadrage — modélisation BDD |
