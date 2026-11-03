@@ -1,8 +1,8 @@
-import { execSync } from 'node:child_process';
-import { loadTestEnv } from './test-env.js';
+import { execSync } from "node:child_process";
+import { loadTestEnv } from "./test-env.js";
 
 export default function setup(): void {
-  loadTestEnv();
+    loadTestEnv();
 
-  execSync('npx prisma migrate deploy', { stdio: 'inherit' });
+    execSync("npx prisma migrate deploy", { stdio: "inherit" });
 }

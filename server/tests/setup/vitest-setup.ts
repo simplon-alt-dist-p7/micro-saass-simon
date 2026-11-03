@@ -1,6 +1,6 @@
-import { afterEach } from 'vitest';
-import { prisma } from '../../src/lib/prisma.js';
-import { loadTestEnv } from './test-env.js';
+import { afterEach } from "vitest";
+import { prisma } from "../../src/lib/prisma.js";
+import { loadTestEnv } from "./test-env.js";
 
 loadTestEnv();
 
