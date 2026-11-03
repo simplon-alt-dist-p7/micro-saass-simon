@@ -9,5 +9,12 @@ export const createBrewSession = async (req: Request, res: Response) => {
     const user = req.user.id;
 
     const brewSession = await addBrewSession(recipe, user);
+    if (!brewSession) {
+        return res
+            .status(409)
+            .json({
+                message: "brewing session already in progress for this user",
+            });
+    }
     res.status(201).json(brewSession);
 };
