@@ -1,5 +1,9 @@
-import { createBrewSession } from "../repositories/brew-session.repository.js";
+import {
+    createBrewSession,
+    findActiveBrewSessionByUserId,
+} from "../repositories/brew-session.repository.js";
 
 export async function addBrewSession(recipeId: string, userId: string) {
-    return await createBrewSession(recipeId, userId);
+    const activeSession = await findActiveBrewSessionByUserId(userId);
+    if (!activeSession) return await createBrewSession(recipeId, userId);
 }
