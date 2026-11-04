@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "@fontsource/manrope/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+
+:root {
+    --surface-principale: #f5f7f8;
+    --surface-secondaire: #263238;
+    --surface-neutre: #ffffff;
+    --text-on-neutre: #263238;
+    --accent: #ff6d00;
+    --accent-strong: #b34700;
+    --danger: #b3261e;
+    --success: #1b5e20;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --surface-principale: #0b0f14;
+        --surface-secondaire: #0b0f14;
+        --surface-neutre: #111827;
+        --text-on-neutre: #f5f7f8;
+    }
+}
+
+@theme {
+    --color-principale: var(--surface-principale);
+    --color-secondaire: var(--surface-secondaire);
+    --color-neutre: var(--surface-neutre);
+    --color-on-neutre: var(--text-on-neutre);
+    --color-accent: var(--accent);
+    --color-accent-strong: var(--accent-strong);
+    --color-danger: var(--danger);
+    --color-success: var(--success);
+
+    --font-display: "Manrope", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--surface-principale);
+    color: var(--text-on-neutre);
+    font-family: var(--font-body);
+    font-size: 16px;
+}
